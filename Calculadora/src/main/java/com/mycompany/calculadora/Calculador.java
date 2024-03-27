@@ -287,114 +287,207 @@ public class Calculador extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
      
     private void btCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCleanActionPerformed
+        
+        //Zerando todas as variaveis.
+        
         sTela = "";
         dValorUm = 0;
         dValorDois = 0;
         sOperador = "";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btCleanActionPerformed
 
     private void btDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDividirActionPerformed
+       
+        //atribuindo uma operação matemática de divisão na variavel sOperador.
+        
         sOperador = "/";
+        
+        //Convertendo o valor de sTela, para Double, e o alocando dentro de dValorUm, em seguida zerando a sTela. 
+        
         dValorUm = Double.parseDouble(sTela);
         sTela = "";
+        
     }//GEN-LAST:event_btDividirActionPerformed
 
     private void btMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMultiplicarActionPerformed
+        
+        //atribuindo uma operação matemática de multiplicação na variavel sOperador.
+        
         sOperador = "*";
+        
+        //Convertendo o valor de sTela, para Double, e o alocando dentro de dValorUm, em seguida zerando a sTela. 
+        
         dValorUm = Double.parseDouble(sTela);
         sTela = "";
+        
     }//GEN-LAST:event_btMultiplicarActionPerformed
 
     private void btSeteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSeteActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "7";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btSeteActionPerformed
 
     private void btOitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btOitoActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "8";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btOitoActionPerformed
 
     private void btNoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNoveActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "9";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btNoveActionPerformed
 
     private void btMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMenosActionPerformed
+        
+        //atribuindo uma operação matemática de subtração na variavel sOperador.
+        
         sOperador = "-";
+        
+        //Convertendo o valor de sTela, para Double, e o alocando dentro de dValorUm, em seguida zerando a sTela. 
+        
         dValorUm = Double.parseDouble(sTela);
         sTela = "";
+        
     }//GEN-LAST:event_btMenosActionPerformed
 
     private void btQuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btQuatroActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "4";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btQuatroActionPerformed
 
     private void btCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCincoActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "5";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btCincoActionPerformed
 
     private void btSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSeisActionPerformed
+       
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "6";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btSeisActionPerformed
 
     private void btMaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisActionPerformed
+        
+        //atribuindo uma operação matemática de Adição na variavel sOperador.
+        
         sOperador = "+";
+        
+        //Convertendo o valor de sTela, para Double, e o alocando dentro de dValorUm, em seguida zerando a sTela. 
+        
         dValorUm = Double.parseDouble(sTela);
-        sTela = "";
+        sTela = "";     
+        
     }//GEN-LAST:event_btMaisActionPerformed
 
     private void btUmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btUmActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "1";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btUmActionPerformed
 
     private void btDoisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDoisActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "2";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btDoisActionPerformed
 
     private void btTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTresActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "3";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btTresActionPerformed
 
     private void btIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIgualActionPerformed
-        dValorDois = Double.parseDouble(sTela);
-        sTela = "";
+        
+        //Pegando o segundo valor digitao na sTela, e convertendo para double e o movendo para dValorDois, e zerando a sTela
+        
+        dValorDois = Double.parseDouble(sTela);   
+        sTela = ""; 
+        
+        //validando o operador selecionado, e realizando seu calculo.
+        
         if (sOperador == "+") {
+            
             dTela = dValorUm + dValorDois;
             dValorUm = dTela;
             dValorDois = 0;
+            
         }else if (sOperador == "-") {
+            
             dTela = dValorUm - dValorDois;
             dValorUm = dTela;
-            dValorDois = 0;            
+            dValorDois = 0;     
+            
         }else if (sOperador == "/") {
+            
             dTela = dValorUm / dValorDois;
             dValorUm = dTela;
             dValorDois = 0;
+            
         }else if (sOperador == "*") {
+            
             dTela = dValorUm * dValorDois;
             dValorUm = dTela;
             dValorDois = 0;
+            
         }
+        
+        //pega o resultado do calculo e o coloca na tela.
         
         tfTela.setText(String.valueOf(dTela));
         
     }//GEN-LAST:event_btIgualActionPerformed
 
     private void btZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btZeroActionPerformed
+        
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + "0";
         tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btZeroActionPerformed
 
     private void btVirgulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVirgulaActionPerformed
+       
+        //Concatenando o valor do botão pressionado na sTela, em seguida mostando o valor na tela.
+        
         sTela = sTela + ".";
+        tfTela.setText(sTela);
+        
     }//GEN-LAST:event_btVirgulaActionPerformed
 
     private void tfTelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTelaActionPerformed
